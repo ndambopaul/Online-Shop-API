@@ -8,6 +8,8 @@ This is a simple online shop API that facilities the common functionalities of a
 # Features/Functionalities
 - User Registration.
 - User Authentication & Authorization.
+- Forgot Password(with email) & Password Reset.
+- User account activation (with email).
 - Products/Inventory Management.
 - Orders Placement & Processing.
 
