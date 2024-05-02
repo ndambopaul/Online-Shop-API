@@ -22,15 +22,13 @@ app.get("/", (req, res) => {
 
 //routes imports
 const productRoutes = require('./routes/product');
-const userRoutes = require("./routes/users");
 const authRoutes = require("./routes/auth");
 const cartRoutes = require("./routes/shopping_cart");
 const orderRoutes = require("./routes/orders");
 
 app.use('/products', productRoutes);
-app.use('/users', userRoutes);
 app.use("/cart", verifyToken, cartRoutes);
-app.use('/users/auth', authRoutes);
+app.use('/users', authRoutes);
 app.use("/orders", verifyToken, orderRoutes);
 //start server
 app.listen(PORT, () => {
