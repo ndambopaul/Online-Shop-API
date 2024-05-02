@@ -28,7 +28,7 @@ const orderRoutes = require("./routes/orders");
 
 app.use('/products', productRoutes);
 app.use("/cart", verifyToken, cartRoutes);
-app.use('/users', authRoutes);
+app.use("/users", authRoutes);
 app.use("/orders", verifyToken, orderRoutes);
 //start server
 app.listen(PORT, () => {
