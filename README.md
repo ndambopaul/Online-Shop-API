@@ -2,6 +2,7 @@
 This is a simple online shop API that facilities the common functionalities of an e-commerce backend service
 
 # Technologies
+- NodeJs
 - ExpressJs
 - MongoDB
 
