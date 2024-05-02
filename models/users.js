@@ -11,6 +11,8 @@ const UserSchema = new mongoose.Schema({
     email: String,
     resetPasswordToken: String,
     resetPasswordExpires: Date,
+    activationToken: String,
+    activationTokenExpires: Date,
     active: {
         type: Boolean,
         default: false
